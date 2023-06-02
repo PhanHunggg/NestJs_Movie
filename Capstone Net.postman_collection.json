@@ -1,0 +1,686 @@
+{
+	"info": {
+		"_postman_id": "5fb7c80a-1867-453b-9546-c1ed1bff3866",
+		"name": "Capstone Net",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"quochung\",\r\n    \"mat_khau\": \"12344\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/login",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign up user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"quochung33\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"hung3@gmail.com\",\r\n    \"so_dt\": 12387234,\r\n    \"mat_khau\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/sign-up",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjIsInRhaV9raG9hbiI6InBoYW5odW5nMiIsImhvX3RlbiI6IlBoYW4gSHVuZyIsImVtYWlsIjoiaHVuZzFAZ21haWwuY29tIiwic29fZHQiOjEyMzQ1NiwibWF0X2toYXUiOiIxMjM0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NDU2Nzc5MSwiZXhwIjoxNjg0NTY5NTkxfQ.hjN6pWdlGNMDbcIvTkG4-v7AnLJn5wPyIaptq-6EeG0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"quochung\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"phanhung@gmail.com\",\r\n    \"so_dt\": 123457,\r\n    \"mat_khau\": \"12344\",\r\n     \"loai_nguoi_dung\": \"KhachHang\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/cap-nhat-nguoi-dung/1",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"cap-nhat-nguoi-dung",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"phanhung22\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"hungquoc1@gmail.com\",\r\n    \"so_dt\": 123456,\r\n    \"mat_khau\": \"1234\",\r\n     \"loai_nguoi_dung\": \"KhachHang\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/them-nguoi-dung",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"them-nguoi-dung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{nguoiDung}}/xoa-nguoi-dung/7",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"xoa-nguoi-dung",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Type user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"phanhung2\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"hung1@gmail.com\",\r\n    \"so_dt\": 123456,\r\n    \"mat_khau\": \"1234\",\r\n    \"loai_nguoi_dung\": \"KhachHang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/loai-nguoi-dung",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"loai-nguoi-dung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{nguoiDung}}/tim-kiem-nguoi-dung/phanhung",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"tim-kiem-nguoi-dung",
+								"phanhung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"phanhung2\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"hung1@gmail.com\",\r\n    \"so_dt\": 123456,\r\n    \"mat_khau\": \"1234\",\r\n    \"loai_nguoi_dung\": \"KhachHang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/danh-sach-nguoi-dung",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"danh-sach-nguoi-dung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserDetail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NDU2ODk0MCwiZXhwIjoxNjg0NTcwNzQwfQ.ejaiwbwDm9m8tvHYphFWwyZZJAiQL3HqQoSqMmCY45A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tai_khoan\": \"phanhung2\",\r\n    \"ho_ten\": \"Phan Hung\",\r\n    \"email\": \"hung1@gmail.com\",\r\n    \"so_dt\": 123456,\r\n    \"mat_khau\": \"1234\",\r\n    \"loai_nguoi_dung\": \"KhachHang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nguoiDung}}/thong-tin-tai-khoan/1",
+							"host": [
+								"{{nguoiDung}}"
+							],
+							"path": [
+								"thong-tin-tai-khoan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "Get Movie List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{movie}}/lay-danh-sach-phim",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"lay-danh-sach-phim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ten_phim",
+									"value": "MARRY MY DEAD BODY",
+									"type": "default"
+								},
+								{
+									"key": "trailer",
+									"value": "https://www.youtube.com/embed/zxk_YEa2Ky0",
+									"type": "default"
+								},
+								{
+									"key": "hinh_anh",
+									"type": "file",
+									"src": "/D:/Wordspace/Cyber_BackEnd/Net/img movie/MARRY_MY_DEAD BODY.jpg"
+								},
+								{
+									"key": "mo_ta",
+									"value": "Ming-Han là một cảnh sát nhiệt huyết. Một ngày nọ, trong quá trình truy bắt tội phạm cùng người đồng nghiệp xinh đẹp Zi-Qing, Ming-Han vô tình nhặt được một phong bao màu đỏ, và một nhóm người bất ngờ nhảy ra gọi anh là \"con rể\". Họ yêu cầu anh ta kết hôn với đứa con đã chết của họ. Ming-Han không thể chấp nhận quyết định này. Tuy nhiên, anh ấy sau đó anh ta gặp phải vô số sự cố xui xẻo. Điều đáng sợ hơn nữa là anh ta bắt đầu nhìn thấy người chồng ma Mao-Mao của mình. Vì vậy, Ming-Han đã tìm đến thầy để tìm cách. Để thoát khỏi Mao-Mao, Ming-Han không còn cách nào khác ngoài việc giúp anh ta thực hiện mọi mong muốn của mình. Nếu không, Mao-Mao sẽ theo anh ta mãi mãi.Đồng thời, Mao-Mao cũng đóng vai trò là đối tác của Ming-Han để giúp anh ta điều tra vụ buôn lậu ma túy. Một cuộc hành trình giả tưởng đầy tiếng cười và nước mắt giữa một người đàn ông thẳng thắn và một con ma đồng tính đã bắt đầu.",
+									"type": "default"
+								},
+								{
+									"key": "ngay_khoi_chieu",
+									"value": "2023-04-07",
+									"type": "default"
+								},
+								{
+									"key": "danh_gia",
+									"value": "8",
+									"type": "default"
+								},
+								{
+									"key": "hot",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "dang_chieu",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "sap_chieu",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{movie}}/them-phim",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"them-phim"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ten_phim\": \"Con Nhót Mót Chồng\",\r\n    \"trailer\": \"https://www.youtube.com/embed/e7KHOQ-alqY\",\r\n    \"mo_ta\": \"Lấy cảm hứng từ web drama Chuyện Xóm Tui, phiên bản điện ảnh sẽ mang một màu sắc hoàn toàn khác: hài hước hơn, gần gũi và nhiều cảm xúc hơn. Bộ phim là câu chuyện của Nhót - người phụ nữ “chưa kịp già” đã sắp bị mãn kinh, vội vàng đi tìm chồng. Nhưng sâu thẳm trong cô là khao khát muốn có một đứa con, và luôn muốn hàn gắn với người cha suốt ngày say xỉn của mình.\",\r\n    \"ngay_khoi_chieu\": \"2023-04-07\",\r\n    \"danh_gia\": 8,\r\n    \"hot\": 1,\r\n    \"dang_chieu\": 1,\r\n    \"sap_chieu\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{movie}}/update-movie-detail/1",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"update-movie-detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update img movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "hinh_anh",
+									"type": "file",
+									"src": "/D:/Wordspace/Cyber_BackEnd/Net/img movie/Fast_X.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{movie}}/update-img-movie/3",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"update-img-movie",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{movie}}/delete-movie/6",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"delete-movie",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Banner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ma_phim",
+									"value": "6",
+									"type": "default"
+								},
+								{
+									"key": "hinh_anh",
+									"type": "file",
+									"src": "/D:/Wordspace/Cyber_BackEnd/Net/banner/MARRY_MY_DEAD_BODY.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{movie}}/them-banner",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"them-banner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movie Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{movie}}/lay-thong-tin-phim/1",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"lay-thong-tin-phim",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Banner List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{movie}}/lay-danh-sach-banner",
+							"host": [
+								"{{movie}}"
+							],
+							"path": [
+								"lay-danh-sach-banner"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Theater",
+			"item": [
+				{
+					"name": "LayThongTinHeThongRap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rap}}/LayThongTinHeThongRap",
+							"host": [
+								"{{rap}}"
+							],
+							"path": [
+								"LayThongTinHeThongRap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LayThongTinCumRapTheoHeThong",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rap}}/LayThongTinCumRapTheoHeThong/2",
+							"host": [
+								"{{rap}}"
+							],
+							"path": [
+								"LayThongTinCumRapTheoHeThong",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetShowtimeSystem",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rap}}/LayThongTinLichChieuHeThongRap/1",
+							"host": [
+								"{{rap}}"
+							],
+							"path": [
+								"LayThongTinLichChieuHeThongRap",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetShowtimeDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{rap}}/LayThongTinLichChieuPhim/1",
+							"host": [
+								"{{rap}}"
+							],
+							"path": [
+								"LayThongTinLichChieuPhim",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "Datve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maLichChieu\": 1,\r\n  \"danhSachVe\": [\r\n    {\r\n      \"maGhe\": 3327,\r\n      \"giaVe\": 750000\r\n    },\r\n     {\r\n      \"maGhe\": 3328,\r\n      \"giaVe\": 750000\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{tickets}}/dat-ve/1",
+							"host": [
+								"{{tickets}}"
+							],
+							"path": [
+								"dat-ve",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TaoLichChieu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ma_rap\": 1,\r\n    \"ma_phim\": 1,\r\n    \"ngay_gio_chieu\": \"2023-04-07\",\r\n    \"gia_ve\": 75000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{tickets}}/tao-lich-chieu",
+							"host": [
+								"{{tickets}}"
+							],
+							"path": [
+								"tao-lich-chieu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lay danh sach phong ve",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{tickets}}/lay-danh-sach-phong-ve/1",
+							"host": [
+								"{{tickets}}"
+							],
+							"path": [
+								"lay-danh-sach-phong-ve",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "nguoiDung",
+			"value": "http://localhost:8080/QuanLyNguoiDung",
+			"type": "default"
+		},
+		{
+			"key": "movie",
+			"value": "http://localhost:8080/QuanLyPhim",
+			"type": "default"
+		},
+		{
+			"key": "rap",
+			"value": "http://localhost:8080/QuanLyRap",
+			"type": "default"
+		},
+		{
+			"key": "tickets",
+			"value": "http://localhost:8080/QuanLyDatVe",
+			"type": "default"
+		}
+	]
+}
