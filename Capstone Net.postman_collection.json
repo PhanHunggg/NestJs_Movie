@@ -265,6 +265,16 @@
 				{
 					"name": "Get Movie List",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NTY4MTc0MSwiZXhwIjoxNjg1NjgzNTQxfQ.FPovT5BP-r3fxQMpeLN6nzgtz4xeGtYGA59qgfsnAL8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -353,7 +363,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ten_phim\": \"Con Nhót Mót Chồng\",\r\n    \"trailer\": \"https://www.youtube.com/embed/e7KHOQ-alqY\",\r\n    \"mo_ta\": \"Lấy cảm hứng từ web drama Chuyện Xóm Tui, phiên bản điện ảnh sẽ mang một màu sắc hoàn toàn khác: hài hước hơn, gần gũi và nhiều cảm xúc hơn. Bộ phim là câu chuyện của Nhót - người phụ nữ “chưa kịp già” đã sắp bị mãn kinh, vội vàng đi tìm chồng. Nhưng sâu thẳm trong cô là khao khát muốn có một đứa con, và luôn muốn hàn gắn với người cha suốt ngày say xỉn của mình.\",\r\n    \"ngay_khoi_chieu\": \"2023-04-07\",\r\n    \"danh_gia\": 8,\r\n    \"hot\": 1,\r\n    \"dang_chieu\": 1,\r\n    \"sap_chieu\": 0\r\n}",
+							"raw": "{\r\n    \"ten_phim\": \"Con Nhót Mót Chồng\",\r\n    \"trailer\": \"https://www.youtube.com/embed/e7KHOQ-alqY\",\r\n    \"mo_ta\": \"Lấy cảm hứng từ web drama Chuyện Xóm Tui, phiên bản điện ảnh sẽ mang một màu sắc hoàn toàn khác: hài hước hơn, gần gũi và nhiều cảm xúc hơn. Bộ phim là câu chuyện của Nhót - người phụ nữ “chưa kịp già” đã sắp bị mãn kinh, vội vàng đi tìm chồng. Nhưng sâu thẳm trong cô là khao khát muốn có một đứa con, và luôn muốn hàn gắn với người cha suốt ngày say xỉn của mình.\",\r\n    \"ngay_khoi_chieu\": \"2023-04-07\",\r\n    \"danh_gia\": 9,\r\n    \"hot\": 1,\r\n    \"dang_chieu\": 0,\r\n    \"sap_chieu\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -494,6 +504,16 @@
 				{
 					"name": "LayThongTinHeThongRap",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NTY4MTc0MSwiZXhwIjoxNjg1NjgzNTQxfQ.FPovT5BP-r3fxQMpeLN6nzgtz4xeGtYGA59qgfsnAL8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -511,16 +531,26 @@
 				{
 					"name": "LayThongTinCumRapTheoHeThong",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NTY4MTc0MSwiZXhwIjoxNjg1NjgzNTQxfQ.FPovT5BP-r3fxQMpeLN6nzgtz4xeGtYGA59qgfsnAL8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{rap}}/LayThongTinCumRapTheoHeThong/2",
+							"raw": "{{rap}}/LayThongTinCumRapTheoHeThong/1",
 							"host": [
 								"{{rap}}"
 							],
 							"path": [
 								"LayThongTinCumRapTheoHeThong",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -597,11 +627,21 @@
 				{
 					"name": "TaoLichChieu",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NTY4MTc0MSwiZXhwIjoxNjg1NjgzNTQxfQ.FPovT5BP-r3fxQMpeLN6nzgtz4xeGtYGA59qgfsnAL8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ma_rap\": 1,\r\n    \"ma_phim\": 1,\r\n    \"ngay_gio_chieu\": \"2023-04-07\",\r\n    \"gia_ve\": 75000\r\n}",
+							"raw": "{\r\n    \"ma_rap\": 3,\r\n    \"ma_phim\": 4,\r\n    \"ngay_gio_chieu\": \"2023-04-07\",\r\n    \"gia_ve\": 75000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -623,16 +663,26 @@
 				{
 					"name": "Lay danh sach phong ve",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im1hX25ndW9pX2R1bmciOjEsInRhaV9raG9hbiI6InF1b2NodW5nIiwiaG9fdGVuIjoiUGhhbiBIdW5nIiwiZW1haWwiOiJwaGFuaHVuZ0BnbWFpbC5jb20iLCJzb19kdCI6MTIzNDU3LCJtYXRfa2hhdSI6IjEyMzQ0IiwibG9haV9uZ3VvaV9kdW5nIjoiS2hhY2hIYW5nIn0sImlhdCI6MTY4NTY4MTc0MSwiZXhwIjoxNjg1NjgzNTQxfQ.FPovT5BP-r3fxQMpeLN6nzgtz4xeGtYGA59qgfsnAL8",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{tickets}}/lay-danh-sach-phong-ve/1",
+							"raw": "{{tickets}}/lay-danh-sach-phong-ve/3",
 							"host": [
 								"{{tickets}}"
 							],
 							"path": [
 								"lay-danh-sach-phong-ve",
-								"1"
+								"3"
 							]
 						}
 					},
